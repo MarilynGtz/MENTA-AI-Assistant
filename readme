@@ -1,0 +1,64 @@
+
+MENTA - Memory Enhancement and Notification Technological Assistant
+
+MENTA is a voice-activated personal assistant that can perform various tasks based on user commands. It utilizes natural language processing and machine learning techniques to understand and respond to user inputs.
+
+PREREQUISITES
+Before running the code, make sure you have the following installed:
+
+Python 3.x
+The required Python packages: google-auth, google-auth-oauthlib, google-auth-httplib2, google-api-python-client, nltk, keras, pywhatkit, pyttsx3, SpeechRecognition, playsound, webdriver, selenium, art
+Additionally, you need to have a Google account and enable the Google Calendar API to access calendar-related functionality.
+
+SETUP
+Obtain the necessary credentials:
+
+Download the credentials.json file from the Google Developers Console after enabling the Google Calendar API.
+Place the credentials.json file in the same directory as the code.
+Install the required Python packages.
+You can use the pip package manager to install the dependencies. Run the following command:
+Copy code:
+pip install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client nltk keras pywhatkit pyttsx3 SpeechRecognition playsound webdriver selenium art
+
+Download the required NLTK data:
+Before running the code, you need to download the NLTK data for tokenization and lemmatization. Run the following Python code:
+import nltk
+nltk.download('punkt')
+nltk.download('wordnet')
+
+
+USAGE
+To use MENTA, follow these steps:
+Run the code:
+Execute the Python script containing the MENTA code.
+
+Trigger MENTA:
+You can trigger MENTA by saying the phrase "hey Menta". MENTA will start listening for commands.
+
+Speak your command:
+Speak a command or question to interact with MENTA. Wait for MENTA to process your input.
+
+Respond and perform tasks:
+MENTA will process your command and respond accordingly.
+You can ask MENTA to perform various tasks, such as retrieving calendar events, adding tasks to a to-do list, searching the web, and more.
+MENTA will provide both spoken and printed responses.
+
+Continue interacting:
+After MENTA completes a task or responds, you can continue speaking commands or questions.
+MENTA will remain active until there is a period of inactivity for 2 minutes, at which point it will exit.
+Note: You can modify the trigger_phrase variable in the code to change the phrase that triggers MENTA. By default, it is set to "hey Menta".
+
+CODE STRUCTURE
+The code consists of the following sections:
+
+Importing necessary modules and packages.
+Loading pre-trained models and required data.
+Setting up the Google Calendar API and authentication.
+Defining utility functions for text processing and classification.
+Implementing functions for performing specific tasks, such as retrieving calendar events, managing tasks, searching the web, etc.
+Implementing the main functionality of MENTA, including voice recognition and response generation.
+Starting MENTA in a separate thread to continuously listen for commands.
+Printing the MENTA GUI and starting the listening thread.
+
+AUTHOR
+Marilyn Gutierrez
